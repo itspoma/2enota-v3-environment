@@ -1,0 +1,8 @@
+app:
+  image: busybox
+  environment:
+    - ENVIRONMENT=development
+  working_dir: /shared
+  volumes:
+    # app
+    - ./shared:/shared
